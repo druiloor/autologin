@@ -14,7 +14,7 @@
  
  # What to do at the "Three Finger Salute".
 -ca::ctrlaltdel:/sbin/shutdown -t5 -r now
-+ca::ctrlaltdel:/sbin/shutdown -t5 -F -rf now
++ca::ctrlaltdel:/sbin/shutdown -t5 -rF now
  
  # Runlevel 0 halts the system.
  l0:0:wait:/etc/rc.d/rc.0
