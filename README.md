@@ -7,5 +7,5 @@ chmod g+rwx /root
 
 Or
 
-adduser user
+adduser user;
 chown user /root 
