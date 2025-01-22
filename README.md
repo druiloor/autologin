@@ -7,4 +7,5 @@ chmod g+rwx /root
 
 Or
 
-chown operator /root 
+adduser user
+chown user /root 
