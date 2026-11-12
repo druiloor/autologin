@@ -17,7 +17,8 @@ int main(void)
 
 	if (!execlp(file, arg0, arg1, arg2, (char *) NULL)) {
 		fprintf(stderr, "Error: %s - %m\n",
-			"execlp(file, arg0, arg1, arg2, (char *) NULL)");
+			"execlp(file, arg0, arg1, arg2, (char *) NULL)"),
+			strerror(errno);
 
 		exit(EXIT_FAILURE);
 	}
