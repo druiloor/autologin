@@ -15,10 +15,7 @@ int main(void)
 	const char arg1[] = "-f";
 
 	if (!execlp(file, arg0, arg1, arg2, (char *) NULL)) {
-		fprintf(stderr, "Error: %s - %m\n",
-			"execlp(file, arg0, arg1, arg2, (char *) NULL)"),
-			strerror(errno);
-
+		perror("execlp");
 		exit(EXIT_FAILURE);
 	}
 
